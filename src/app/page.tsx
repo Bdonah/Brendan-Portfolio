@@ -61,43 +61,85 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Education Section */}
-      <section className="max-w-2xl w-full mb-8 text-left space-y-4">
+     {/* Education Section */}
+     <section className="max-w-2xl w-full mb-8 text-left space-y-4">
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
           <FaGraduationCap className="mr-2" /> Education
         </h2>
-        <div>
-          <p><strong>Michigan State University</strong> | B.S. in Computer Science, Business Cognate</p>
-          <p>Aug 2023 – May 2027 (Expected)</p>
+
+        {/* Michigan State University */}
+        <div className="flex items-center space-x-4 mb-4">
+          <Image
+            src="/msu-logo.png"  
+            alt="Michigan State University"
+            width={40}
+            height={40}
+            className="rounded-full"
+          />
+          <div>
+            <h3 className="text-xl font-bold">Michigan State University</h3>
+            <p><strong>B.S. in Computer Science, Business Cognate</strong> | Aug 2023 – May 2027 (Expected)</p>
+          </div>
         </div>
-        <div>
-          <p><strong>Rochester Adams High School</strong></p>
-          <p>Aug 2019 – June 2023</p>
+
+        {/* Rochester Adams High School */}
+        <div className="flex items-center space-x-4 mb-4">
+          <Image
+            src="/ahs-logo.png"  
+            alt="Rochester Adams High School"
+            width={40}
+            height={40}
+            className="rounded-full"
+          />
+          <div>
+            <h3 className="text-xl font-bold">Rochester Adams High School</h3>
+            <p>Aug 2019 – June 2023</p>
+          </div>
         </div>
       </section>
 
-      {/* Work Experience Section */}
-      <section className="max-w-2xl w-full mb-8 text-left space-y-4">
+       {/* Work Experience Section */}
+       <section className="max-w-2xl w-full mb-8 text-left space-y-4">
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
           <FaBriefcase className="mr-2" /> Work Experience
         </h2>
 
-        <div>
-          <h3 className="text-xl font-bold">Outdoor Design Expressions</h3>
-          <p><strong>Team Member</strong> | May 2024 – Aug 2024 | Novi, MI</p>
-          <ul className="list-disc pl-6">
-            <li>Led a team of 7 across customer locations to meet deadlines.</li>
-            <li>Maintained quality and attention to detail throughout landscaping phases.</li>
-          </ul>
+        {/* Outdoor Design Expressions */}
+        <div className="flex items-center space-x-4 mb-4">
+          <Image
+            src="/grass-logo.png"  // Path to your logo image
+            alt="Outdoor Design Expressions"
+            width={40}
+            height={40}
+            className="rounded-full"
+          />
+          <div>
+            <h3 className="text-xl font-bold">Outdoor Design Expressions</h3>
+            <p><strong>Team Member</strong> | May 2024 – Aug 2024 | Novi, MI</p>
+            <ul className="list-disc pl-6">
+              <li>Led a team of 7 across customer locations to meet deadlines.</li>
+              <li>Maintained quality and attention to detail throughout landscaping phases.</li>
+            </ul>
+          </div>
         </div>
 
-        <div>
-          <h3 className="text-xl font-bold">Shake Shack</h3>
-          <p><strong>Crew Member</strong> | Mar 2022 – Aug 2023 | Rochester Hills, MI</p>
-          <ul className="list-disc pl-6">
-            <li>Led kitchen team to fulfill 200+ orders efficiently.</li>
-            <li>Trained new hires and maintained high service standards.</li>
-          </ul>
+        {/* Shake Shack */}
+        <div className="flex items-center space-x-4 mb-4">
+          <Image
+            src="/ss-logo.png"  
+            alt="Shake Shack"
+            width={40}
+            height={40}
+            className="rounded-full"
+          />
+          <div>
+            <h3 className="text-xl font-bold">Shake Shack</h3>
+            <p><strong>Crew Member</strong> | Mar 2022 – Aug 2023 | Rochester Hills, MI</p>
+            <ul className="list-disc pl-6">
+              <li>Led kitchen team to fulfill 200+ orders efficiently.</li>
+              <li>Trained new hires and maintained high service standards.</li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -106,18 +148,57 @@ export default function Home() {
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
           <FaUsers className="mr-2" /> Leadership & Activities
         </h2>
-        <div>
-          <h3 className="text-xl font-bold">National Honor Society</h3>
-          <p>Organized food, gift, and toy drives (2019–2023)</p>
+        
+        {/* National Honor Society */}
+        <div className="flex items-center space-x-4 mb-4">
+          <Image
+            src="/nhs-logo.png"  
+            alt="National Honor Society"
+            width={40}
+            height={40}
+            className="rounded-full"  
+          />
+          <div>
+            <h3 className="text-xl font-bold">National Honor Society</h3>
+            <p>Organized food, gift, and toy drives (2019–2023)</p>
+          </div>
         </div>
-        <div>
-          <h3 className="text-xl font-bold">Varsity Soccer</h3>
-          <p>2022 State Champion, Team Captain, Highlander Pride Award (2019-2023)</p>
+
+        {/* Varsity Soccer */}
+        <div className="flex items-center space-x-4 mb-4">
+          <Image
+            src="/ahs-logo.jpg"  
+            alt="Varsity Soccer"
+            width={40}
+            height={40}
+            className="rounded-full"  
+          />
+          <div>
+            <h3 className="text-xl font-bold">Varsity Soccer</h3>
+            <p>2022 State Champion, Team Captain, Highlander Pride Award (2019-2023)</p>
+          </div>
         </div>
-        <div>
-          <h3 className="text-xl font-bold">Imagine Software Development Club</h3>
-          <p>Active member of the Imagine Software Development Club, where I developed a full-stack chatbot. Currently, I am working on a project where users can draw on their screen and adjust various aspects of the cursor, including its color, shape, and size.</p>
+
+        {/* Imagine Software Development Club */}
+        <div className="flex items-center space-x-4 mb-4">
+          <Image
+            src="/imagine -logo.jpg"  
+            alt="Imagine Software Development Club"
+            width={40}  
+            height={40} 
+            className="rounded-full"  
+          />
+          <div>
+            <h3 className="text-xl font-bold">Imagine Software Development Club</h3>
+          </div>
         </div>
+
+        {/* Description for Imagine Software Development Club */}
+        <p className="mt-2">
+          Active member of the Imagine Software Development Club, where I developed a full-stack chatbot. 
+          Currently, I am working on a project where users can draw on their screen and adjust various aspects 
+          of the cursor, including its color, shape, and size.
+        </p>
       </section>
 
       {/* Technical Skills Section */}
