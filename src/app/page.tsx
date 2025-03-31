@@ -101,7 +101,11 @@ export default function Home() {
         </div>
         <div>
           <h3 className="text-xl font-bold">Varsity Soccer</h3>
-          <p>State Champion, Team Captain, Highlander Pride Award</p>
+          <p>2022 State Champion, Team Captain, Highlander Pride Award (2019-2023)</p>
+        </div>
+        <div>
+          <h3 className="text-xl font-bold">Imagine Software Development Club</h3>
+          <p>Active member of the Imagine Software Development Club, where I developed a full-stack chatbot. Currently, I am working on a project where users can draw on their screen and adjust various aspects of the cursor, including its color, shape, and size.</p>
         </div>
       </section>
 
