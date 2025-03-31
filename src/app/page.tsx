@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image';
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaGraduationCap, FaBriefcase, FaUsers, FaCode } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 export default function Home() {
@@ -9,10 +9,10 @@ export default function Home() {
     <main className="flex flex-col items-center justify-center p-8 bg-white text-black min-h-screen">
       {/* Profile Section */}
       <Image
-        src="/brendan.jpg" 
+        src="/brendan.jpg"
         alt="Brendan Donahue"
-        width={160} 
-        height={160} 
+        width={160}
+        height={160}
         className="rounded-full shadow-md mb-4"
       />
       <h1 className="text-4xl font-bold mb-2">Brendan Donahue</h1>
@@ -36,7 +36,9 @@ export default function Home() {
 
       {/* Projects Section */}
       <section className="max-w-2xl w-full mb-8 text-left space-y-6">
-        <h2 className="text-2xl font-semibold mb-4">Projects</h2>
+        <h2 className="text-2xl font-semibold mb-4 flex items-center">
+          <FaBriefcase className="mr-2" /> Projects
+        </h2>
 
         <div>
           <h3 className="text-xl font-bold">Chatbot</h3>
@@ -44,10 +46,10 @@ export default function Home() {
           <p>
             Designed a responsive chatbot with a full-stack setup and AI integration. Built dynamic frontend logic and backend API interactions with optimized state management and error handling.
           </p>
-        <video controls className="w-full mt-4 rounded shadow">
-          <source src="/chatbot-demo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+          <video controls className="w-full mt-4 rounded shadow">
+            <source src="/chatbot-demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
 
         <div>
@@ -61,7 +63,9 @@ export default function Home() {
 
       {/* Education Section */}
       <section className="max-w-2xl w-full mb-8 text-left space-y-4">
-        <h2 className="text-2xl font-semibold mb-4">Education</h2>
+        <h2 className="text-2xl font-semibold mb-4 flex items-center">
+          <FaGraduationCap className="mr-2" /> Education
+        </h2>
         <div>
           <p><strong>Michigan State University</strong> | B.S. in Computer Science, Business Cognate</p>
           <p>Aug 2023 – May 2027 (Expected)</p>
@@ -74,7 +78,9 @@ export default function Home() {
 
       {/* Work Experience Section */}
       <section className="max-w-2xl w-full mb-8 text-left space-y-4">
-        <h2 className="text-2xl font-semibold mb-4">Work Experience</h2>
+        <h2 className="text-2xl font-semibold mb-4 flex items-center">
+          <FaBriefcase className="mr-2" /> Work Experience
+        </h2>
 
         <div>
           <h3 className="text-xl font-bold">Outdoor Design Expressions</h3>
@@ -97,7 +103,9 @@ export default function Home() {
 
       {/* Leadership & Activities Section */}
       <section className="max-w-2xl w-full mb-8 text-left space-y-4">
-        <h2 className="text-2xl font-semibold mb-4">Leadership & Activities</h2>
+        <h2 className="text-2xl font-semibold mb-4 flex items-center">
+          <FaUsers className="mr-2" /> Leadership & Activities
+        </h2>
         <div>
           <h3 className="text-xl font-bold">National Honor Society</h3>
           <p>Organized food, gift, and toy drives (2019–2023)</p>
@@ -114,7 +122,9 @@ export default function Home() {
 
       {/* Technical Skills Section */}
       <section className="max-w-2xl w-full text-left space-y-4">
-        <h2 className="text-2xl font-semibold mb-4">Technical Skills</h2>
+        <h2 className="text-2xl font-semibold mb-4 flex items-center">
+          <FaCode className="mr-2" /> Technical Skills
+        </h2>
         <div>
           <p><strong>Languages:</strong> Java, Python, C/C++, TypeScript, JavaScript, HTML/CSS</p>
           <p><strong>Frameworks:</strong> React.js, Next.js, Node.js</p>
