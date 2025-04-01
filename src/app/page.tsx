@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { FaGithub, FaLinkedin, FaGraduationCap, FaBriefcase, FaUsers, FaCode } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import {BsJournal} from "react-icons/bs";
 
 export default function Home() {
   return (
@@ -199,6 +200,44 @@ export default function Home() {
           Currently, I am working on a project where users can draw on their screen and adjust various aspects 
           of the cursor, including its color, shape, and size.
         </p>
+      </section>
+
+      
+      
+
+
+        {/* Relevant Coursework Section */}
+        <section className="max-w-2xl w-full mb-8 text-left space-y-4">
+        <h2 className="text-2xl font-semibold mb-4 flex items-center">
+        <BsJournal className="mr-2" /> Relevant Coursework
+        </h2>
+
+        {/* CSE 231 */}
+        <div>
+          <h3 className="text-xl font-bold">CSE 231: Introduction to Programming 1</h3>
+          <p className="text-sm text-gray-600 mb-1">Python Programming</p>
+          <p>
+            In this course, I learned the fundamentals of programming using Python. The class focused on Python’s unique features, such as its simplicity, readability, and powerful standard libraries. I gained hands-on experience in writing clean and efficient Python code to solve various computational problems, which laid the foundation for my future projects and development skills in Python.
+          </p>
+        </div>
+
+        {/* CSE 232 */}
+        <div>
+          <h3 className="text-xl font-bold">CSE 232: Introduction to Programming 2</h3>
+          <p className="text-sm text-gray-600 mb-1">C++ Programming</p>
+          <p>
+            This course expanded my programming knowledge by introducing C++. I learned about C++&apos;s object-oriented principles, memory management, and its ability to work closely with system-level resources. Through this course, I gained a deeper understanding of how to write efficient code in languages with more complex syntax and memory handling than Python.
+          </p>
+        </div>
+
+        {/* CSE 260 */}
+        <div>
+          <h3 className="text-xl font-bold">CSE 260: Discrete Structures in Computer Science</h3>
+          <p className="text-sm text-gray-600 mb-1">Mathematical Foundations</p>
+          <p>
+            CSE 260 provided a solid foundation in discrete mathematics and its applications in computer science. Topics covered included set theory, graph theory, logic, combinatorics, and algorithms. These concepts are essential for problem-solving in algorithms and data structures, and they have equipped me with the mathematical background needed for more advanced coursework and practical applications in the field.
+          </p>
+        </div>
       </section>
 
       {/* Technical Skills Section */}
