@@ -3,24 +3,35 @@
 import Image from 'next/image';
 import { FaGithub, FaLinkedin, FaGraduationCap, FaBriefcase, FaUsers, FaCode } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import {BsJournal} from "react-icons/bs";
+import { BsJournal } from "react-icons/bs";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center p-8 bg-white text-black min-h-screen">
-      {/* Profile Section */}
-      <Image
-        src="/brendan.jpg"
-        alt="Brendan Donahue"
-        width={160}
-        height={160}
-        className="rounded-full shadow-md mb-4"
-      />
+      
+  {/* Profile Section */}
+  <div className="flex justify-center space-x-4 mb-8">
+        <Image
+          src="/brendan.jpg"
+          alt="Brendan Donahue"
+          width={160}
+          height={160}
+          className="rounded-full shadow-md"
+        />
+        <Image
+          src="/msucs-logo.jpg"
+          alt="MSU CompSci"
+          width={160}
+          height={160}
+          className="rounded-full shadow-md"
+        />
+      </div>
+
       <h1 className="text-4xl font-bold mb-2">Brendan Donahue</h1>
       <p className="text-lg text-gray-600 mb-4">Computer Science Student @ Michigan State University</p>
 
-      {/* Social Links */}
-      <div className="flex space-x-6 mb-6">
+  {/* Social Links */}
+  <div className="flex space-x-6 mb-6">
         <a href="https://github.com/Bdonah" target="_blank" rel="noopener noreferrer">
           <FaGithub size={28} />
         </a>
@@ -35,12 +46,13 @@ export default function Home() {
         </a>
       </div>
 
-      {/* Projects Section */}
-      <section className="max-w-2xl w-full mb-8 text-left space-y-6">
+
+
+  {/* Projects Section */}
+  <section className="max-w-2xl w-full mb-8 text-left space-y-6">
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
           <FaBriefcase className="mr-2" /> Projects
         </h2>
-
         <div>
           <h3 className="text-xl font-bold">Chatbot</h3>
           <p className="text-sm text-gray-600 mb-1">Next.js, React, TypeScript, Tailwind CSS, Ollama AI, Node.js</p>
@@ -62,13 +74,16 @@ export default function Home() {
         </div>
       </section>
 
-     {/* Education Section */}
-     <section className="max-w-2xl w-full mb-8 text-left space-y-4">
+      {/* Horizontal Line */}
+      <hr className="border-t-2 w-1/2 mb-6" />
+
+  {/* Education Section */}
+  <section className="max-w-2xl w-full mb-8 text-left space-y-4">
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
           <FaGraduationCap className="mr-2" /> Education
         </h2>
 
-        {/* Michigan State University */}
+    {/* Michigan State University */}
         <div className="flex items-center space-x-4 mb-4">
           <Image
             src="/msu-logo.png"  
@@ -83,7 +98,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Rochester Adams High School */}
+    {/* Rochester Adams High School */}
         <div className="flex items-center space-x-4 mb-4">
           <Image
             src="/ahs-logo.png"  
@@ -99,91 +114,109 @@ export default function Home() {
         </div>
       </section>
 
-       {/* Work Experience Section */}
-       <section className="max-w-2xl w-full mb-8 text-left space-y-4">
+      {/* Horizontal Line */}
+      <hr className="border-t-2 w-1/2 mb-6" />
+
+  {/* Work Experience Section */}
+  <section className="max-w-2xl w-full mb-8 text-left space-y-4">
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
           <FaBriefcase className="mr-2" /> Work Experience
         </h2>
 
-        {/* Outdoor Design Expressions */}
-        <div className="flex items-center space-x-4 mb-4">
+    {/* Outdoor Design Expressions */}
+        <div className="flex items-start space-x-4 mb-4">
           <Image
-            src="/grass-logo.png"  // Path to your logo image
+            src="/grass-logo.png"
             alt="Outdoor Design Expressions"
-            width={40}
-            height={40}
+            width={40}  
+            height={40} 
             className="rounded-full"
           />
-          <div>
+          <div className="flex flex-col justify-start">
             <h3 className="text-xl font-bold">Outdoor Design Expressions</h3>
             <p><strong>Team Member</strong> | May 2024 – Aug 2024 | Novi, MI</p>
-            <ul className="list-disc pl-6">
-              <li>Led a team of 7 across customer locations to meet deadlines.</li>
-              <li>Maintained quality and attention to detail throughout landscaping phases.</li>
-            </ul>
           </div>
         </div>
+        <ul className="list-disc pl-6">
+          <li>Led a team of 7 across customer locations to meet deadlines, ensuring project goals were completed on time.</li>
+          <li>Provided excellent customer service, addressing client concerns and making sure projects met their expectations.</li>
+          <li>Worked collaboratively with the team to maintain quality control, ensuring the landscaping was done to a high standard.</li>
+          <li>Contributed to the preparation and design phase of landscaping projects by offering creative input and executing tasks efficiently.</li>
+          <li>Managed inventory and ensured proper maintenance of tools and equipment, minimizing delays during project execution.</li>
+        </ul>
 
-        {/* Shake Shack */}
-        <div className="flex items-center space-x-4 mb-4">
+    {/* Shake Shack */}
+        <div className="flex items-start space-x-4 mb-4">
           <Image
-            src="/ss-logo.png"  
+            src="/ss-logo.png"
             alt="Shake Shack"
-            width={40}
-            height={40}
+            width={40}  
+            height={40} 
             className="rounded-full"
           />
-          <div>
+          <div className="flex flex-col justify-start">
             <h3 className="text-xl font-bold">Shake Shack</h3>
             <p><strong>Crew Member</strong> | Mar 2022 – Aug 2023 | Rochester Hills, MI</p>
-            <ul className="list-disc pl-6">
-              <li>Led kitchen team to fulfill 200+ orders efficiently.</li>
-              <li>Trained new hires and maintained high service standards.</li>
-            </ul>
           </div>
         </div>
+        <ul className="list-disc pl-6">
+          <li>Led kitchen team to fulfill 200+ customer orders daily, ensuring food quality, presentation, and timeliness.</li>
+          <li>Trained new hires, providing guidance on food preparation, customer service, and maintaining cleanliness in a fast-paced environment.</li>
+          <li>Handled customer inquiries and special requests with professionalism, contributing to positive customer experiences.</li>
+          <li>Managed inventory control, helping to reduce waste by closely monitoring stock levels and ensuring supplies were properly stored.</li>
+          <li>Collaborated with team members to optimize workflows, reduce wait times, and maintain the highest standards of food safety.</li>
+        </ul>
       </section>
 
-      {/* Leadership & Activities Section */}
-      <section className="max-w-2xl w-full mb-8 text-left space-y-4">
+      {/* Horizontal Line */}
+      <hr className="border-t-2 w-1/2 mb-6" />
+
+  {/* Leadership & Activities Section */}
+  <section className="max-w-2xl w-full mb-8 text-left space-y-4">
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
           <FaUsers className="mr-2" /> Leadership & Activities
         </h2>
         
-        {/* National Honor Society */}
+    {/* National Honor Society */}
         <div className="flex items-center space-x-4 mb-4">
           <Image
-            src="/nhs-logo.png"  
-            alt="National Honor Society"
-            width={40}
-            height={40}
+            src="/nhs-logo.png"
+            alt="National Honors Society"
+            width={40}  
+            height={40} 
             className="rounded-full"  
           />
           <div>
-            <h3 className="text-xl font-bold">National Honor Society</h3>
-            <p>Organized food, gift, and toy drives (2019–2023)</p>
+            <h3 className="text-xl font-bold">National Honors Society</h3>
           </div>
         </div>
 
-        {/* Varsity Soccer */}
+        <p className="mt-2">
+          Being part of the National Honor Society was a rewarding experience where I got to lead community-driven initiatives. I helped organize food and toy drives to support local families, especially around the holidays.
+        </p>
+
+    {/* Varsity Soccer */}
         <div className="flex items-center space-x-4 mb-4">
           <Image
             src="/ahs-logo.jpg"  
             alt="Varsity Soccer"
-            width={40}
-            height={40}
+            width={40}  
+            height={40} 
             className="rounded-full"  
           />
           <div>
-            <h3 className="text-xl font-bold">Varsity Soccer</h3>
-            <p>2022 State Champion, Team Captain, Highlander Pride Award (2019-2023)</p>
+            <h3 className="text-xl font-bold">Varsity Soccer Captain</h3>
           </div>
         </div>
 
-        {/* Imagine Software Development Club */}
+        <p className="mt-2">
+          Being part of the varsity soccer team was an important experience in my high school years. As captain during my junior and senior years, I was proud to be part of the team that won the Michigan High School State Championship in 2023. I was also honored with the Highlander Pride Award for my leadership and sportsmanship, emphasizing the importance of teamwork and dedication.
+        </p>
+
+    {/* Imagine Software Development Club */}
         <div className="flex items-center space-x-4 mb-4">
           <Image
-            src="/imagine -logo.jpg"  
+            src="/imagine-logo.jpg"  
             alt="Imagine Software Development Club"
             width={40}  
             height={40} 
@@ -194,25 +227,21 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Description for Imagine Software Development Club */}
         <p className="mt-2">
-          Active member of the Imagine Software Development Club, where I developed a full-stack chatbot. 
-          Currently, I am working on a project where users can draw on their screen and adjust various aspects 
-          of the cursor, including its color, shape, and size.
+          Active member of the Imagine Software Development Club, where I developed a full-stack chatbot. Currently, I am working on a project where users can draw on their screen and adjust various aspects of the cursor, including its color, shape, and size.
         </p>
       </section>
 
-      
-      
+      {/* Horizontal Line */}
+      <hr className="border-t-2 w-1/2 mb-6" />
 
-
-        {/* Relevant Coursework Section */}
-        <section className="max-w-2xl w-full mb-8 text-left space-y-4">
+  {/* Relevant Coursework Section */}
+  <section className="max-w-2xl w-full mb-8 text-left space-y-4">
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
-        <BsJournal className="mr-2" /> Relevant Coursework
+          <BsJournal className="mr-2" /> Relevant Coursework
         </h2>
 
-        {/* CSE 231 */}
+    {/* CSE 231 */}
         <div>
           <h3 className="text-xl font-bold">CSE 231: Introduction to Programming 1</h3>
           <p className="text-sm text-gray-600 mb-1">Python Programming</p>
@@ -221,7 +250,7 @@ export default function Home() {
           </p>
         </div>
 
-        {/* CSE 232 */}
+    {/* CSE 232 */}
         <div>
           <h3 className="text-xl font-bold">CSE 232: Introduction to Programming 2</h3>
           <p className="text-sm text-gray-600 mb-1">C++ Programming</p>
@@ -230,7 +259,7 @@ export default function Home() {
           </p>
         </div>
 
-        {/* CSE 260 */}
+    {/* CSE 260 */}
         <div>
           <h3 className="text-xl font-bold">CSE 260: Discrete Structures in Computer Science</h3>
           <p className="text-sm text-gray-600 mb-1">Mathematical Foundations</p>
@@ -240,8 +269,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Technical Skills Section */}
-      <section className="max-w-2xl w-full text-left space-y-4">
+      {/* Horizontal Line */}
+      <hr className="border-t-2 w-1/2 mb-6" />
+
+  {/* Technical Skills Section */}
+    <section className="max-w-2xl w-full text-left space-y-4">
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
           <FaCode className="mr-2" /> Technical Skills
         </h2>
