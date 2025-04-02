@@ -10,23 +10,22 @@ export default function Home() {
     <main className="flex flex-col items-center justify-center p-8 bg-white text-black min-h-screen">
       
   {/* Profile Section */}
-  <div className="flex justify-center space-x-4 mb-8">
-        <Image
-          src="/brendan.jpg"
-          alt="Brendan Donahue"
-          width={160}
-          height={160}
-          className="rounded-full shadow-md"
-        />
-        <Image
-          src="/msucs-logo.jpg"
-          alt="MSU CompSci"
-          width={160}
-          height={160}
-          className="rounded-full shadow-md"
-        />
-      </div>
-
+    <div className="flex justify-center space-x-4 mb-8">
+  <Image
+    src="/headshot-smile.jpeg"
+    alt="Brendan Donahue"
+    width={200}
+    height={160}
+    className="shadow-md object-cover"
+  />
+  <Image
+    src="/msucs-logo.jpg"
+    alt="MSU CompSci"
+    width={290}
+    height={160}
+    className="shadow-md object-cover"
+  />
+</div>
       <h1 className="text-4xl font-bold mb-2">Brendan Donahue</h1>
       <p className="text-lg text-gray-600 mb-4">Computer Science Student @ Michigan State University</p>
 
